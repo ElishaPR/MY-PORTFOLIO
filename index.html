@@ -14,49 +14,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="nav">
-    <nav>
-      <div class="main-nav">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
 
-        <div class="nav-logo">
-          <a href="#" class="nav-title">Elisha P R</a>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-title">
+                <a href="#">Elisha P R</a>
+            </div>
 
-        <div class="nav-menu-wrapper">
-          <input type="checkbox" id="check" />
-          <label for="check" class="open-menu"><i class="ri-menu-line"></i></label>
+            <input type="checkbox" id="check" />
 
-          <ul class="menu">
-            <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
-            <li class="menu-item"><a href="#techstack" class="menu-link">Tech Stack</a></li>
-            <li class="menu-item"><a href="#internship" class="menu-link">Internship</a></li>
-            <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
-            <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
-            <li class="close-menu-wrapper">
-              <label for="check" class="close-menu"><i class="ri-close-line"></i></label>
-            </li>
-          </ul>
-        </div>
+            <ul class="navbar-nav menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#techstack" class="nav-link">Tech Stack</a></li>
+                <li class="nav-item"><a href="#internship" class="nav-link">Internship</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <label for="check" class="close-menu"><i class="ri-close-line"></i></label>
+            </ul>
 
-      </div>
-    </nav>
-  </header>
+            <label for="check" class="open-menu"><i class="ri-menu-line"></i></label>
+        </nav>
+    </header>
 
 
     <main>
         <section id="home" class="content">
             <div class="home__container">
 
-                <!-- LEFT COLUMN -->
                 <div class="home__left">
                     <div class="home__intro-container">
                         <h1 class="home__intro">Hi, I'm <span>Elisha&nbsp;P&nbsp;R</span></h1>
                     </div>
 
                     <div class="auto-type-container">
-                        <h3 class="auto-type"></h3> <!-- add sample fallback text -->
+                        <h3 class="auto-type"></h3>
                     </div>
 
                     <div class="home__info-container">
@@ -66,7 +59,7 @@
 
                     <div class="cta-buttons">
                         <a href="#projects">View Projects</a>
-                        <a href="#">Download CV</a>
+                        <a href="files/RESUME - ELISHA P R.pdf" download>Download CV</a>
                     </div>
 
                     <div class="home__contact">
@@ -77,7 +70,6 @@
                     </div>
                 </div>
 
-                <!-- RIGHT COLUMN -->
                 <div class="home__gif">
                     <dotlottie-player src="https://lottie.host/94544d71-c909-4adc-ac3d-2df7bac9d213/SYYaPBQvsj.lottie"
                         background="transparent" speed="1" style="width: 300px; height: 300px" loop
@@ -266,6 +258,7 @@
 
                         <div class="projects__card-info">
                             <h3>Event Registration Form</h3>
+
                             <p>An event information page with a registration form, built using HTML and Bootstrap.</p>
                         </div>
 
